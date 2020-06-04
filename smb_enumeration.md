@@ -74,3 +74,10 @@ Module options (auxiliary/scanner/smb/smb_enumusers):
 ```
 Ok! we only need to give the ip of remote host and the it will exploit it automatically..![enter image description here](https://raw.githubusercontent.com/shubham381/smb_enumeration/master/smb_enum.png)
 Here we successfully enumerate every user.
+
+The **smb_enumshares** module, as would be expected, enumerates any SMB shares that are available on a remote system.
+The **smb_enumusers** scanner will connect to each system via the SMB RPC service and enumerate the users on the system.
+The **smb_login** module can also be passed a username and password list in order to attempt to brute-force login attempts across a range of machines.
+The **smb_version** scanner connects to each workstation in a given range of hosts and determines the version of the SMB service that is running.
+
+
